@@ -1,0 +1,62 @@
+.global{
+    width:1002px;
+    margin:0 auto;
+}
+
+.dp{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+}
+
+.ad{
+    text-align: left;
+    margin: 0 auto;
+    border-bottom:1px solid #bcbcbc;
+}
+
+.cbd{
+    float: left;
+}
+.souround{
+    clear:both;
+    border-bottom:1px solid #bcbcbc;
+}
+.cbd div p{
+    float: left;
+
+}
+.nav-tabs{border-bottom:0px}
+.cbd div{
+    width: 400px;
+    padding: 20px;
+}
+.nav li{height:30px !important;}
+ul,li,div {padding:0;margin:0;}
+
+ul li {float:left;width:100px;height:30px;line-height:30px;text-align:center;background-color:#fff;border:1px #bbb solid;border-bottom:none;}
+ul li button{width:100px;heigh:40px}
+.fli button{background-color:#ccc}
+
+ul li.fli {background-color:#ccc;color:red;}
+
+ul {overflow:hidden;zoom:1;list-style-type:none;}
+
+#cbdTabDiv {width:800px;height:480px;}
+
+#cbdTabDiv div {width:800px;height:500px;display:none;border:0px #bbb solid;border-top:none;}
+
+#cbdTabDiv div.fdiv {display:block}
+
+
+.tab-content{float: left}
+.localtion_detail{float: left;margin-left:50px}
+
+#cbdTab{margin-top:10px;}
+.location_comments{font-weight: bold;border-top:1px solid #bcbcbc;border-bottom:1px solid #bcbcbc;height:80px;line-height: 80px}
+
+#shop-address-bottom p{float:left;margin-top:10px}
+
+#allmap {border-top:1px solid #bcbcbc;width:1000px;height:400px;margin:0;font-family:"Î¢ÈíÑÅºÚ";margin-bottom: 10px}
