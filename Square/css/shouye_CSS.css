@@ -64,7 +64,8 @@ span .placeholder{color:#333333!important;padding-left: 10px;}
 /*bottom*/
 .line_bottom{height: 200px;margin: auto;z-index: 9;background-color:#000314;opacity: 0.90;font-family: "微软雅黑";border-top: #000314 1px solid;}
 .line_bottom .nav_top01{width:1002px;margin:0 auto;height:200px; list-style:none;}
-.nav_top02 a{float: left;margin-left: 50px;font-size: 16px;margin-top: 40px;margin-bottom: 40px;padding-right: 90px;color: #FFFFFF;}
+.nav_top02 {overflow: hidden;}
+.nav_top02 a{float: left;margin-left: 49px;font-size: 16px;margin-top: 40px;margin-bottom: 40px;padding-right: 90px;color: #FFFFFF;}
 .nav_top02 a:hover{color: #CE0C0F;font-weight:900; text-decoration-line: underline;}
 .nav_top03,.nav_top04{margin: 0 auto; text-align: center;color:#FFFFFF;}
 .line_bottom_01{height:1px;margin: auto;background-color: #9E9E9E;margin-top: 30px;}

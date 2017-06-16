@@ -193,7 +193,7 @@
         <div><p>点间距：</p></div>
         <div><p>屏幕所属：</p></div>
         </div>
-        <div style="float: right;margin-top: 150px;"><button class="btn btn-default"> 更多详情</button></div>
+        <div style="float: right;margin-top: 150px;"><button class="btn btn-default" id="moredetailpage"> 更多详情</button></div>
     </div>
 
     <div style="clear: left"></div>
@@ -293,6 +293,13 @@
             }
         }
     }
+</script>
+<script type="text/javascript">
 
+    $(function(){
+        $('#moredetailpage').click(function(){
+            window.location.href="MoreDetail.html"
+        })
+    })
 
 </script>

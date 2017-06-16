@@ -184,7 +184,8 @@
         <div><p>面积：</p></div>
         <div><p>尺寸：</p></div>
         </div>
-        <div style="float: right;margin-top: 330px;"><button class="btn btn-default"> 更多详情</button></div>
+        <div style="float: right;margin-top: 330px;"><button class="btn btn-default" id="moredetailpage"> 更多详情</button></div>
+
     </div>
 
     <div style="clear: left"></div>
@@ -285,5 +286,17 @@
         }
     }
 
+
+
+
+
+</script>
+<script type="text/javascript">
+
+    $(function(){
+        $('#moredetailpage').click(function(){
+            window.location.href="MoreDetail.html"
+        })
+    })
 
 </script>

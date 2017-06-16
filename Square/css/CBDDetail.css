@@ -60,3 +60,7 @@ ul {overflow:hidden;zoom:1;list-style-type:none;}
 #shop-address-bottom p{float:left;margin-top:10px}
 
 #allmap {border-top:1px solid #bcbcbc;width:1000px;height:400px;margin:0;font-family:"Î¢ÈíÑÅºÚ";margin-bottom: 10px}
+
+.footer{width:100%;position:absolute;bottom:0px;left:0px;}
+.img-comments{margin-left:150px;margin-top:10px;border-top:1px solid #bcbcbc;border-bottom:1px solid #bcbcbc;}
+.img-comments p{margin-top:10px}
