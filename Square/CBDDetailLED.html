@@ -14,11 +14,11 @@
     <!--下拉框-->
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
     <!--搜索-->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+    <!--<link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">-->
     <link href="css/city-picker.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+    <!--<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.js"></script>-->
     <script src="js/city-picker.data.js"></script>
     <script src="js/city-picker.js"></script>
     <script src="js/main.js"></script>
@@ -30,13 +30,13 @@
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--轮播-->
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery.min 2.js"></script>
-    <script type="text/javascript" src="js/scroll.1.3.js"></script>
-    <script type="text/javascript" src="js/main 2.js"></script>
-
 
     <link href="css/CBDDetail.css" rel="stylesheet">
     <script type="text/javascript" src="js/CBDDetail.js"></script>
+
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>CBD-LED 详情</title>
 </head>
 
@@ -166,12 +166,35 @@
         </li>
     </ul>
 
-
 </div>
 
     <div id="cbdTabDiv" class="tab-content">
-        <div class="tab-pane fade in active fdiv" id="center_shop_div">
-            <img src="images/bg.jpg" onload=proDownImage(this);> </img>
+        <!--必须添加tab-pane fdiv-->
+        <div class="tab-pane fdiv fade in active" id="center_shop_div">
+            <div id="myCarousel" class="carousel slide active">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/NEWs.jpg" onload=proDownImage(this);>
+                </div>
+                <div class="item">
+                    <img src="images/2.jpg" onload=proDownImage(this);>
+                </div>
+                <div class="item">
+                    <img src="images/3.jpg" onload=proDownImage(this);>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next">&rsaquo;</a>
+            </div>
         </div>
         <div class="tab-pane fade" id="square_div">
             <img src="images/logo.png" onload=proDownImage(this);> </img>
@@ -256,7 +279,7 @@
 <script type="text/javascript">
     var tabs=document.getElementById('cbdTab').getElementsByTagName('li')
 
-    var divs=document.getElementById('cbdTabDiv').getElementsByTagName('div');
+    var divs=document.getElementById('cbdTabDiv').getElementsByClassName("tab-pane");
 
 /*tab之间的切换*/
     (function(){
@@ -273,7 +296,7 @@
             if (tabs[i] == obj) {
                 tabs[i].className="fli";
                 if("undefined"!=typeof divs[i]){
-                    divs[i].className="fdiv";
+                    divs[i].className="fdiv tab-pane";
                 }
                 if(tabs[i].firstElementChild.innerHTML=='LED'){
                     document.getElementById('localtion_detail_led').removeAttribute("style")
@@ -286,7 +309,7 @@
             else {
                 tabs[i].className="";
                 if("undefined"!=typeof divs[i]){
-                    divs[i].className="";
+                    divs[i].className="tab-pane";
                 }
 
             }
@@ -320,6 +343,9 @@
 
     $(function(){
         $('#moredetailpage').click(function(){
+            window.location.href="MoreDetail.html"
+        })
+        $('#moredetailpage_led').click(function(){
             window.location.href="MoreDetail.html"
         })
     })

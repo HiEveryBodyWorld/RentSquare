@@ -46,7 +46,7 @@ ul {overflow:hidden;zoom:1;list-style-type:none;}
 
 #cbdTabDiv {width:800px;height:480px;}
 
-#cbdTabDiv div {width:800px;height:500px;display:none;border:0px #bbb solid;border-top:none;}
+#cbdTabDiv div {width:800px;height:450px;border:0px #bbb solid;border-top:none;}
 
 #cbdTabDiv div.fdiv {display:block}
 
@@ -64,3 +64,4 @@ ul {overflow:hidden;zoom:1;list-style-type:none;}
 .footer{width:100%;position:absolute;bottom:0px;left:0px;}
 .img-comments{margin-left:150px;margin-top:10px;border-top:1px solid #bcbcbc;border-bottom:1px solid #bcbcbc;}
 .img-comments p{margin-top:10px}
+
