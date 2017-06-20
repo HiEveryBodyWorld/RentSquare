@@ -181,7 +181,7 @@
         </div>
 
     </div>
-    <div class="localtion_detail">
+    <div id="localtion_detail_led" class="localtion_detail_led" style="display: none">
         <div>
         <div><h4>点位描述</h4></div>
         <div><p>频次／天：</p></div>
@@ -193,7 +193,17 @@
         <div><p>点间距：</p></div>
         <div><p>屏幕所属：</p></div>
         </div>
-        <div style="float: right;margin-top: 150px;"><button class="btn btn-default" id="moredetailpage"> 更多详情</button></div>
+        <div style="float: right;margin-top: 150px;"><button class="btn btn-default" id="moredetailpage_led"> 更多详情</button></div>
+    </div>
+
+    <div id="localtion_detail" class="localtion_detail">
+        <div>
+            <div><h4>点位描述</h4></div>
+            <div><p>面积：</p></div>
+            <div><p>尺寸：</p></div>
+        </div>
+        <div style="float: right;margin-top: 330px;"><button class="btn btn-default" id="moredetailpage"> 更多详情</button></div>
+
     </div>
 
     <div style="clear: left"></div>
@@ -262,11 +272,23 @@
         for (var i = 0; i < tabs.length; i++) {
             if (tabs[i] == obj) {
                 tabs[i].className="fli";
-                divs[i].className="fdiv";
+                if("undefined"!=typeof divs[i]){
+                    divs[i].className="fdiv";
+                }
+                if(tabs[i].firstElementChild.innerHTML=='LED'){
+                    document.getElementById('localtion_detail_led').removeAttribute("style")
+                    document.getElementById('localtion_detail').style.display="none";
+                }else{
+                    document.getElementById('localtion_detail').removeAttribute("style")
+                    document.getElementById('localtion_detail_led').style.display="none";
+                }
             }
             else {
                 tabs[i].className="";
-                divs[i].className="";
+                if("undefined"!=typeof divs[i]){
+                    divs[i].className="";
+                }
+
             }
         }
     }
